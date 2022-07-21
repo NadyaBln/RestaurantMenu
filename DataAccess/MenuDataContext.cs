@@ -1,16 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RestaurantMenu.DataAccess.Entities;
-using RestaurantMenu.Mapping;
+using RestaurantMenu.DataAccess.Mapping;
 
 namespace RestaurantMenu
 {
     class MenuDataContext : DbContext
     {
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Product { get; set; }
         public DbSet<Orders> Orders { get; set; }
-        public DbSet<Guest> Guests { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Allergen> Allergens { get; set; }
+        public DbSet<Guest> Guest { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<Allergen> Allergen { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
