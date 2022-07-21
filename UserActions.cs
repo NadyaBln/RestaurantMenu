@@ -9,7 +9,7 @@ namespace RestaurantMenu
         public static async Task CreateOrderAsync(int OrderId, int OrderItemId, int TableNumber, string GuestName, string GuestEmail)
         {
             var context = new MenuDataContext();
-            await context.Guests.AddAsync(new Guest
+            await context.Guest.AddAsync(new Guest
             {
                 GuestName = GuestName,
                 GuestEmail = GuestEmail

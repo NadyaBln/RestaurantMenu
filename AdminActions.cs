@@ -9,7 +9,7 @@ namespace RestaurantMenu
         {
             var context = new MenuDataContext();
             //add product
-            await context.Products.AddAsync(new Product
+            await context.Product.AddAsync(new Product
             {
                 Title = Title,
                 Price = Price,
@@ -26,7 +26,7 @@ namespace RestaurantMenu
         public static async Task AddAllergenAsync(string AllergenName)
         {
             var context = new MenuDataContext();
-            await context.Allergens.AddAsync(new Allergen
+            await context.Allergen.AddAsync(new Allergen
             {
                 AllergenName = AllergenName
             });
@@ -36,7 +36,7 @@ namespace RestaurantMenu
         public static async Task AddCategoriesAsync(string CategoryName, string Description)
         {
             var context = new MenuDataContext();
-            await context.Categories.AddAsync(new Category
+            await context.Category.AddAsync(new Category
             {
                 CategoryName = CategoryName,
                 Description = Description
