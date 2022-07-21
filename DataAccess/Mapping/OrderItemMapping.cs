@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using RestaurantMenu.DataAccess.Entities;
 
-namespace RestaurantMenu.Mapping
+namespace RestaurantMenu.DataAccess.Mapping
 {
     class OrderItemMapping : IEntityTypeConfiguration<OrderItem>
     {

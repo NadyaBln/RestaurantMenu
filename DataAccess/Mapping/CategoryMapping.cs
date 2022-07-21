@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RestaurantMenu.Mapping
+namespace RestaurantMenu.DataAccess.Mapping
 {
     class CategoryMapping : IEntityTypeConfiguration<Category>
     {
