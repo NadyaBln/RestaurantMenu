@@ -6,7 +6,7 @@ namespace RestaurantMenu
 {
     class UserActions
     {
-        public static async Task CreateOrderAsync(int OrderId, int OrderItemId, int TableNumber, string GuestName, string GuestEmail)
+        public static async Task CreateOrderAsync(int OrderItemId, int TableNumber, string GuestName, string GuestEmail)
         {
             var context = new MenuDataContext();
             await context.Guest.AddAsync(new Guest
@@ -20,10 +20,9 @@ namespace RestaurantMenu
 
             await context.Orders.AddAsync(new Orders
             {
-                OrderId = OrderId,
                 OrderItemId = OrderItemId,
                 CreationDateTime = DateTime.Now,
-                GuestId = GuestId,
+               // GuestId = GuestId,
                 TableNumber = TableNumber
             });
             await context.SaveChangesAsync();

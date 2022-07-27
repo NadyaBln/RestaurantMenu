@@ -29,6 +29,5 @@ namespace RestaurantMenu
             //connection string to DB
             optionsBuilder.UseSqlServer(@"Server=.;Database=RestaurantMenuDB;Trusted_Connection=True;");
         }
-
     }
 }

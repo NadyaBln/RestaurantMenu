@@ -10,6 +10,7 @@ namespace RestaurantMenu.DataAccess.Mapping
         {
             builder.ToTable("OrderItem", "dbo");
             builder.HasKey(x => x.OrderItemId);
+           // builder.HasMany(x => x.ProductId);
         }
     }
 }
